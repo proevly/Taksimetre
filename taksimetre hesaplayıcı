@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        double acilis=10;
+        double km=2.20;
+        double mesafe;
+        System.out.println("Gidilecek Mesafeyi Km Cinsinden Giriniz");
+        mesafe = input.nextDouble();
+        if((acilis+(mesafe*km)) < 20){
+            System.out.println("Ücretiniz 20 Tl Dir");
+        }
+        double ucret = acilis+(mesafe*km);
+        System.out.println("Ücretiniz:"+ucret);
+
+
+
+    }
+}
